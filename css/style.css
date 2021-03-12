@@ -1,0 +1,49 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/* UTILITY */
+.flex{
+    display: flex;
+}
+
+/* MAIN */
+.main-content{
+    height: calc(100vh - 80px);
+}
+
+.gallery{
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.navigation{
+    width: 20vw;
+    background-color: black;
+}
+
+.upgrade{
+    width: 90vw;
+    height: 10vh;
+    background-color: #080b12;
+}
+
+.playlist{
+    width: 90vw;
+    height: calc(100vh - 10vh - 80px);
+    background-color: #141922;
+}
+
+/* FOOTER */
+.main-footer{
+    height: 80px;
+    background-color: #282828;
+}
