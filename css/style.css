@@ -11,8 +11,8 @@ body{
 }
 
 /* UTILITY */
-.flex{
-    display: flex;
+.grey{
+    color: #5e5e5e;
 }
 
 /* MAIN */
@@ -20,26 +20,48 @@ body{
     height: calc(100vh - 80px);
 }
 
-.gallery{
-    flex-wrap: wrap;
-    align-content: flex-start;
-}
-
+/* main navigation */
 .navigation{
-    width: 20vw;
+    width: 15vw;
     background-color: black;
 }
 
+.logo img{
+    height: 100px;
+}
+
+/* gallery */
+.gallery{
+    width: 85vw;
+    flex-wrap: wrap;
+}
+
 .upgrade{
-    width: 90vw;
     height: 10vh;
     background-color: #080b12;
 }
 
 .playlist{
-    width: 90vw;
     height: calc(100vh - 10vh - 80px);
     background-color: #141922;
+}
+
+.row{
+    flex-wrap: wrap;
+    padding-right: 30px;
+}
+
+.row h2{
+    width: 100%;
+    margin: 20px 30px;
+}
+
+.card{
+    width: calc(100% / 6 - 30px); 
+    height: 200px;
+    margin-left: 30px;
+    border: 1px solid black;
+    background-color: white;
 }
 
 /* FOOTER */
