@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!--fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
 
@@ -20,40 +22,57 @@
       -->
     <main class="main-content flex">
         <!-- main navigation -->
-        <aside class="navigation">
+        <aside class="navigation flex">
             <div class="logo">
                 <img class="p-20" src="./img/logo.svg" alt="logo">
             </div>
-            <ul>
-                <li>
-                    aside
+            <ul class="top-nav pl-20">
+                <li class="flex pt-10">
+                    <img src="./img/home.svg" alt="home">
+                    Home
                 </li>
-                <li>
-                    aside
+                <li class="flex pt-10">
+                    <img src="./img/search.svg" alt="search">
+                    Cerca
                 </li>
-                <li>
-                    aside
+                <li class="flex pt-10">
+                    <img src="./img/libreria.svg" alt="library">
+                    La tua libreria
                 </li>
-                <li>
-                    aside
+            </ul>
+
+            <ul class="playlist pl-20">
+                <h4 class="mt-30">PLAYLIST</h4>
+                <li class="flex mt-10">
+                    <div class="add mr-10"></div>
+                    Crea Playlist
                 </li>
-                <li>
-                    aside
+                <li class="pt-20">
+                    Nome Playlist
                 </li>
-                <li>
-                    aside
+                <li class="pt-20">
+                    Nome Playlist
                 </li>
-                <li>
-                    aside
+                <li class="pt-20">
+                    Nome Playlist
                 </li>
-                <li>
-                    aside
+                <li class="pt-20">
+                    Nome Playlist
                 </li>
-                <li>
-                    aside
+                <li class="pt-20">
+                    Nome Playlist
                 </li>
+            </ul>
+
+            <ul class="profile pb-10 pl-20">
                 <li>
-                    aside
+                    <i class="fas fa-arrow-down mr-10"></i>
+                    Installa App
+                </li>
+                <hr class="my-10">
+                <li>
+                    <img src="./img/profile.svg" alt="profile">
+                    John Doe
                 </li>
             </ul>
         </aside>
@@ -64,7 +83,7 @@
                 visualizza upgrade
             </div>
     
-            <div class="playlist w-100">
+            <div class="songs pt-100 w-100 pb-20">
                 <div class="row flex">
                     <h2>title</h2>
                     <div class="card">
