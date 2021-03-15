@@ -12,7 +12,12 @@ body{
 }
 
 /* UTILITY */
-h1, h2, h3, h4, h5, h6{
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
     color: white;
 }
 
@@ -21,99 +26,128 @@ li{
 }
 
 /* MAIN CONTENT*/
-.main-content{
+.main-window{
     height: calc(100vh - 80px);
 }
 
-/* main navigation */
-.navigation{
-    width: 15vw;
-    background-color: black;
+.sidebar,
+.content{
+    overflow-y: hidden;
 }
 
-aside{
-    height: calc(100vh - 80px);
-    align-content: flex-start;
-    flex-wrap: wrap;
-    position: relative;
+/* sidebar */
+.sidebar{
+    flex-basis: 230px;
+    background-color: #000;
 }
 
-.logo img{
+.sidebar-top{
+    height: calc(100% - 80px);
+}
+
+.sidebar-top .logo img{
     height: 100px;
 }
 
-.navigation ul li{
+.sidebar-top nav ul img{
+    width: 40px;
+}
+
+.sidebar-top nav ul li{
+    padding-top: 20px;
     align-items: center;
 }
 
-.navigation ul li img{
-    width: 30px;
-    padding-right: 5px;
+.sidebar-bottom{
+    height: 80px;
 }
 
-.add{
-    width: 40px;
-    height: 40px;
-    background-color: #5e5e5e;
-}
-
-.profile{
-    width: 90%;
-    position: absolute;
-    bottom: 0%;
-}
-
-ul.profile li i{
+.sidebar-bottom i{
     font-size: 10px;
     padding: 1px;
-    border: 1px solid #5e5e5e;
+    border: 1px solid currentColor;
     border-radius: 50%;
 }
 
-ul.profile li img{
+.sidebar-bottom img{
+    width: 30px;
+    padding: 5px;
+    background-color: grey;
+    border: 1px solid currentColor;
     border-radius: 50%;
-    background-color: #5e5e5e;
 }
 
-/* gallery */
-.gallery{
+.sidebar-bottom .download,
+.sidebar-bottom .profile-name{
+    align-items: center;
+}
+
+/* content */
+.content{
+    flex-grow: 1;
+    background-color: #141922;
+    position: relative;
+}
+
+.content-top-bar{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content-top-bar .upgrade-btn{
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 1px solid currentColor;
+    border-radius: 30px;
+}
+
+.content .scrollable{
     height: 100%;
-    flex-wrap: wrap;
+    padding: 80px 15px 0;
     overflow-y: auto;
 }
 
-.upgrade{
-    height: 100px;
-    position: fixed;
-    background-color: #080b12;
+.content-menu ul{
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
 }
 
-.songs{
-    width: 85vw;
-    background-color: #141922;
+.content-category{
+    margin-bottom: 30px;
 }
 
-.row{
+.album-list{
     flex-wrap: wrap;
-    padding-right: 30px;
 }
 
-.row h2{
-    width: 100%;
-    margin: 20px 30px;
+.album-list .album{
+    flex-basis: calc(100% / 6 - 15px);
+    height: 300px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    /* background-color: white; */
 }
 
-.card{
-    width: calc(100% / 6 - 30px);
-    min-width: 200px;
-    height: 200px;
-    margin-left: 30px;
-    border: 1px solid black;
-    background-color: white;
+.album .cover img{
+    max-width: 100%;
 }
 
 /* FOOTER */
-.main-footer{
+.player{
     height: 80px;
     background-color: #282828;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-album,
+.player-audio{
+    flex-basis: 230px;
 }

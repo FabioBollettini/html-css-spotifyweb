@@ -20,121 +20,154 @@
      <!-- 
          MAIN
       -->
-    <main class="main-content flex">
-        <!-- main navigation -->
-        <aside class="navigation flex">
-            <div class="logo">
-                <img class="p-20" src="./img/logo.svg" alt="logo">
-            </div>
-            <ul class="top-nav pl-20">
-                <li class="flex pt-10">
-                    <img src="./img/home.svg" alt="home">
-                    Home
-                </li>
-                <li class="flex pt-10">
-                    <img src="./img/search.svg" alt="search">
-                    Cerca
-                </li>
-                <li class="flex pt-10">
-                    <img src="./img/libreria.svg" alt="library">
-                    La tua libreria
-                </li>
-            </ul>
+    <div class="app">
+        <!-- main content -->
+        <main class="main-window flex">
+            <aside class="sidebar px-10">
+                <section class="sidebar-top">
+                    <div class="logo">
+                        <img class="py-20" src="./img/logo.svg" alt="logo">
+                    </div>
+                    <nav>
+                        <ul>
+                            <!-- navigation (home, search etc) -->
+                            <li class="flex">
+                                <img class="pr-10" src="./img/home.svg" alt="home">
+                                Home
+                            </li>
+                            <li class="flex">
+                                <img class="pr-10" src="./img/search.svg" alt="search">
+                                Cerca
+                            </li>
+                            <li class="flex">
+                                <img class="pr-10" src="./img/libreria.svg" alt="library">
+                                La tua libreria
+                            </li>
+                            <!-- playlist -->
+                            <li>
+                                <h3 class="pt-20">PLAYLIST</h3>
+                            </li>
+                            <li>
+                                Crea Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
 
-            <ul class="playlist pl-20">
-                <h4 class="mt-30">PLAYLIST</h4>
-                <li class="flex mt-10">
-                    <div class="add mr-10"></div>
-                    Crea Playlist
-                </li>
-                <li class="pt-20">
-                    Nome Playlist
-                </li>
-                <li class="pt-20">
-                    Nome Playlist
-                </li>
-                <li class="pt-20">
-                    Nome Playlist
-                </li>
-                <li class="pt-20">
-                    Nome Playlist
-                </li>
-                <li class="pt-20">
-                    Nome Playlist
-                </li>
-            </ul>
-
-            <ul class="profile pb-10 pl-20">
-                <li>
-                    <i class="fas fa-arrow-down mr-10"></i>
-                    Installa App
-                </li>
-                <hr class="my-10">
-                <li>
-                    <img src="./img/profile.svg" alt="profile">
-                    John Doe
-                </li>
-            </ul>
-        </aside>
-        
-        <!-- gallery -->
-        <section class="gallery flex">
-            <div class="upgrade w-100">
-                visualizza upgrade
-            </div>
-    
-            <div class="songs pt-100 w-100 pb-20">
-                <div class="row flex">
-                    <h2>title</h2>
-                    <div class="card">
-                    
+                <!-- user profile -->
+                <section class="sidebar-bottom">
+                    <div class="download flex">
+                        <i class="fas fa-arrow-down mr-10"></i>
+                        Installa app
                     </div>
-                    <div class="card">
-    
+                    <hr class="my-10">
+                    <div class="profile-name flex">
+                        <img src="./img/profile.svg" alt="profile">
+                        <h3 class="pl-10">John Doe</h3>
                     </div>
-                    <div class="card">
-    
-                    </div>
-                    <div class="card">
-    
-                    </div>
-                    <div class="card">
-    
-                    </div>
-                    <div class="card">
-    
+                </section>
+            </aside>
+            
+            <!-- content -->
+            <section class="content">
+                <div class="content-top-bar flex">
+                    <div class="upgrade-btn white py-10 px-20 mr-40">
+                        effettua l' upgrade
                     </div>
                 </div>
+                <!-- scrollable content -->
+                <div class="scrollable">
+                    <nav class="content-menu">
+                        <ul class="flex py-30">
+                            <li class="px-20">
+                                IN EVIDENZA
+                            </li>
+                            <li class="px-20">
+                                PODCAST
+                            </li>
+                            <li class="px-20">
+                                CLASSIFICHE
+                            </li>
+                            <li class="px-20">
+                                GENERI E MOOD
+                            </li>
+                            <li class="px-20">
+                                NUOVE USCITE
+                            </li>
+                            <li class="px-20">
+                                SCOPRI
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- albums -->
+                    <section class="content-category">
+                        <h2 class="my-20">Recently Played</h2>
+                        <ul class="album-list ta-center flex">
+                            <li class="album">
+                                <div class="cover">
+                                    <img src="./img/metal_lifting.jpg" alt="heavy metal">
+                                </div>
+                                <h3 class="my-20">Heavy Metal</h3>
+                                <div>Subtitle</div>
+                            </li>
+                            <li class="album"></li>
+                            <li class="album"></li>
+                            <li class="album"></li>
+                            <li class="album"></li>
+                            <li class="album"></li>
+                        </ul>
+                    </section>
 
-                <div class="row flex">
-                    <h2>title</h2>
-                    <div class="card">
-                    
-                    </div>
-                    <div class="card">
-    
-                    </div>
+                    <section class="content-category">
+                        <h2 class="my-20">Title</h2>
+                        <ul class="album-list flex">
+                            <li class="album"></li>
+                            <li class="album"></li>
+                        </ul>
+                    </section>
+
+                    <section class="content-category">
+                        <h2 class="my-20">Title</h2>
+                        <ul class="album-list flex">
+                            <li class="album"></li>
+                            <li class="album"></li>
+                        </ul>
+                    </section>
                 </div>
-                
-                <div class="row flex">
-                    <h2>title</h2>
-                    <div class="card">
-                    
-                    </div>
-                    <div class="card">
-    
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 
     <!-- 
-        FOOTER
+        FOOTER (player)
      -->
-    <footer class="main-footer">
-        footer
+    <footer class="player flex">
+        <div class="player-album">album</div>
+        <div class="player-controller">controller</div>
+        <div class="player-audio">audio</div>
     </footer>
-
+    
 </body>
 </html>
