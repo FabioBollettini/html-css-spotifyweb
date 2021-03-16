@@ -70,10 +70,10 @@ a{
     border: 1px solid #adff2f;
     border-radius: 50%;
     opacity: 0;
-    transition: 1s;
+    transition: 0.3s;
 }
 
-/* HOVER */
+/* HOVER EFFECTS*/
 span:hover,
 i:hover,
 .add-btn:hover,
@@ -104,13 +104,14 @@ i:hover,
     transition: 0.3s;
 }
 
-.time .bar:hover span,
-.player-audio .bar:hover span{
+.time:hover .bar span,
+.player-audio:hover .bar span{
     transition: 0.3s;
     background-color: #adff2f;
 }
 
-.bar:hover .ball{
+.time:hover .ball,
+.player-audio:hover .ball{
     transform: scale(3);
     opacity: 1;
 }
