@@ -23,68 +23,70 @@
     <div class="app">
         <!-- main content -->
         <main class="main-window flex">
-            <aside class="sidebar px-10">
+            <aside class="sidebar">
                 <section class="sidebar-top">
                     <div class="logo">
-                        <img class="py-20" src="./img/logo.svg" alt="logo">
+                        <img class="mobile-no  px-10 py-20" src="./img/logo.svg" alt="logo">
+                        <img class="logo-small p-10" src="./img/logo-small.svg" alt="logo">
                     </div>
                     <nav>
                         <ul>
                             <!-- navigation (home, search etc) -->
-                            <li class="flex">
+                            <li class="left-green-border flex px-10">
                                 <img class="pr-10" src="./img/home.svg" alt="home">
-                                Home
+                                <span class="mobile-no">Home</span>
                             </li>
-                            <li class="flex">
+                            <li class="flex px-10">
                                 <img class="pr-10" src="./img/search.svg" alt="search">
-                                Cerca
+                                <span class="mobile-no">Cerca</span>
                             </li>
-                            <li class="flex">
+                            <li class="flex px-10">
                                 <img class="pr-10" src="./img/libreria.svg" alt="library">
-                                La tua libreria
+                                <span class="mobile-no">La tua libreria</span>
                             </li>
                             <!-- playlist -->
                             <li>
-                                <h3 class="pt-20">PLAYLIST</h3>
+                                <h3 class="mobile-no  px-10 pt-20">PLAYLIST</h3>
                             </li>
-                            <li>
-                                Crea Playlist
+                            <li class="add-playlist flex px-10">
+                                <div class="add-btn mobile-no ta-center mr-10">+</div>
+                                <span class="mobile-no">Crea Playlist</span>
                             </li>
-                            <li>
-                                Nome Playlist
+                            <li class="px-10">
+                                <span class="mobile-no">Nome Playlist</span>
                             </li>
-                            <li>
-                                Nome Playlist
+                            <li class="px-10">
+                                <span class="mobile-no">Nome Playlist</span>
                             </li>
-                            <li>
-                                Nome Playlist
+                            <li class="px-10">
+                                <span class="mobile-no">Nome Playlist</span>
                             </li>
-                            <li>
-                                Nome Playlist
+                            <li class="px-10">
+                                <span class="mobile-no">Nome Playlist</span>
                             </li>
-                            <li>
-                                Nome Playlist
+                            <li class="px-10">
+                                <span class="mobile-no">Nome Playlist</span>
                             </li>
-                            <li>
-                                Nome Playlist
+                            <li class="px-10">
+                                <span class="mobile-no">Nome Playlist</span>
                             </li>
-                            <li>
-                                Nome Playlist
+                            <li class="px-10">
+                                <span class="mobile-no">Nome Playlist</span>
                             </li>
                         </ul>
                     </nav>
                 </section>
 
                 <!-- user profile -->
-                <section class="sidebar-bottom">
-                    <div class="download flex">
-                        <i class="fas fa-arrow-down mr-10"></i>
-                        Installa app
+                <section class="sidebar-bottom px-10">
+                    <div class="download flex mb-10">
+                        <i class="fas fa-arrow-down mx-10"></i>
+                        <span class="mobile-no">Installa app</span>
                     </div>
-                    <hr class="my-10">
-                    <div class="profile-name flex">
-                        <img src="./img/profile.svg" alt="profile">
-                        <h3 class="pl-10">John Doe</h3>
+                    <hr class="mobile-no">
+                    <div class="profile-name flex mt-10">
+                        <img class="rounded" src="./img/profile.svg" alt="profile">
+                        <h3 class="mobile-no pl-10">John Doe</h3>
                     </div>
                 </section>
             </aside>
@@ -132,27 +134,79 @@
                                 <h3 class="my-20">Heavy Metal</h3>
                                 <div>Subtitle</div>
                             </li>
-                            <li class="album"></li>
-                            <li class="album"></li>
-                            <li class="album"></li>
-                            <li class="album"></li>
-                            <li class="album"></li>
+                            <li class="album">
+                                <div class="cover">
+                                    <img src="./img/stranger.jpeg" alt="heavy metal">
+                                </div>
+                                <h3 class="my-20">Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)</h3>
+                                <div>Kyle Dixon & Michael Stein</div>
+                            </li>
+                            <li class="album">
+                                <div class="cover">
+                                    <img src="./img/aquietplace.jpeg" alt="aquietplace">
+                                </div>
+                                <h3 class="my-20">A quiet place</h3>
+                                <div>Subtitle</div>
+                            </li>
+                            <li class="album">
+                                <div class="cover">
+                                    <img src="./img/split.jpeg" alt="split">
+                                </div>
+                                <h3 class="my-20">Split</h3>
+                                <div>Subtitle</div>
+                            </li>
+                            <li class="album">
+                                <div class="cover">
+                                    <img src="./img/cure.jpeg" alt="cure">
+                                </div>
+                                <h3 class="my-20">A cure for wellness</h3>
+                                <div>Subtitle</div>
+                            </li>
+                            <li class="album">
+                                <div class="cover">
+                                    <img src="./img/sinister.jpeg" alt="sinister">
+                                </div>
+                                <h3 class="my-20">Sinister</h3>
+                                <div>Subtitle</div>
+                            </li>
                         </ul>
                     </section>
 
                     <section class="content-category">
-                        <h2 class="my-20">Title</h2>
-                        <ul class="album-list flex">
-                            <li class="album"></li>
-                            <li class="album"></li>
+                        <h2 class="my-20">Creato per John Doe</h2>
+                        <div class="mb-40">Più ascolti, più Accurati saranno i suggerimenti.</div>
+                        <ul class="album-list ta-center flex">
+                            <li class="album">
+                                <div class="cover">
+                                    <img src="./img/radar.jpeg" alt="radar">
+                                </div>
+                                <h3 class="my-20">Release Radar</h3>
+                            </li>
+                            <li class="album">
+                                <div class="cover">
+                                    <img src="./img/mixdaily.jpeg" alt="mix daily">
+                                </div>
+                                <h3 class="my-20">Daily Mix 1</h3>
+                            </li>
                         </ul>
                     </section>
 
                     <section class="content-category">
-                        <h2 class="my-20">Title</h2>
-                        <ul class="album-list flex">
-                            <li class="album"></li>
-                            <li class="album"></li>
+                        <h2 class="my-20">Artisti più popolari</h2>
+                        <div class="mb-40">Più ascolti, più Accurati saranno i suggerimenti.</div>
+                        <ul class="album-list ta-center flex">
+                            <li class="album">
+                                <div class="cover">
+                                    <img class="rounded" src="./img/youg.jpeg" alt="youg">
+                                </div>
+                                <h3 class="mt-20">Youg</h3>
+                            </li>
+                            <li class="album">
+                                <div class="cover">
+                                    <img class="rounded" src="./img/einaudi.jpeg" alt="einaudi">
+                                </div>
+                                <h3 class="mt-20">Einaudi</h3>
+                            </li>
                         </ul>
                     </section>
                 </div>
@@ -163,10 +217,49 @@
     <!-- 
         FOOTER (player)
      -->
-    <footer class="player flex">
-        <div class="player-album">album</div>
-        <div class="player-controller">controller</div>
-        <div class="player-audio">audio</div>
+    <footer class="player flex px-10">
+        <!-- album -->
+        <div class="player-album flex">
+            <a href="#">
+                <img class="mx-10" src="./img/player_left.jpg" alt="player album">
+            </a>
+            <div class="song-name">
+                <a href="#"><h3>Sinister</h3></a>
+                <div>Brano Nome</div>
+            </div>
+            <div class="like">
+                <a href="#"><i class="far fa-heart mx-10"></i></a>
+                <a href="#"><i class="far fa-folder mx-10"></i></a>
+            </div>
+        </div>
+
+        <!-- controller -->
+        <div class="player-controller white">
+            <div class="controller-top flex my-5">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo-alt"></i>
+            </div>
+            <div class="time flex">
+                <div class="mr-10">0:25</div>
+                <div class="bar flex">
+                    <span></span>
+                </div>
+                <div class="ml-10">4:35</div>
+            </div>
+        </div>
+
+        <!-- audio -->
+        <div class="player-audio white flex ll-10">
+            <i class="fas fa-bars px-10"></i>
+            <i class="fas fa-desktop px-10"></i>
+            <i class="fas fa-volume-up px-10"></i>
+            <div class="bar flex">
+                <span></span>
+            </div>
+        </div>
     </footer>
     
 </body>

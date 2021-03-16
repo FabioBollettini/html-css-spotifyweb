@@ -161,6 +161,11 @@ MARGIN
 }
 
 /* margin top-bot */
+.my-5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .my-10{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -294,6 +299,11 @@ MARGIN
 }
 
 /* margin right and left */
+.mx-5{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .mx-10{
     margin-left: 10px;
     margin-right: 10px;
