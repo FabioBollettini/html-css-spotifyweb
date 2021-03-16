@@ -26,11 +26,12 @@
             <aside class="sidebar">
                 <section class="sidebar-top">
                     <div class="logo">
-                        <img class="mobile-no  px-10 py-20" src="./img/logo.svg" alt="logo">
+                        <img class="logo-big mobile-no px-10 py-20" src="./img/logo.svg" alt="logo">
                         <img class="logo-small p-10" src="./img/logo-small.svg" alt="logo">
                     </div>
                     <nav>
                         <ul>
+
                             <!-- navigation (home, search etc) -->
                             <li class="left-green-border flex px-10">
                                 <img class="pr-10" src="./img/home.svg" alt="home">
@@ -44,6 +45,7 @@
                                 <img class="pr-10" src="./img/libreria.svg" alt="library">
                                 <span class="mobile-no">La tua libreria</span>
                             </li>
+
                             <!-- playlist -->
                             <li>
                                 <h3 class="mobile-no  px-10 pt-20">PLAYLIST</h3>
@@ -98,27 +100,33 @@
                         effettua l' upgrade
                     </div>
                 </div>
+
                 <!-- scrollable content -->
                 <div class="scrollable">
                     <nav class="content-menu">
                         <ul class="flex py-30">
-                            <li class="px-20">
-                                IN EVIDENZA
+                            <li class="in-evidenza pt-5 px-20">
+                                <span>IN EVIDENZA</span>
+                                <div class="flex">
+                                    <div class="bars"></div>
+                                    <div class="bars bottom-green-border"></div>
+                                    <div class="bars"></div>
+                                </div>
                             </li>
                             <li class="px-20">
-                                PODCAST
+                                <span>PODCAST</span>
                             </li>
                             <li class="px-20">
-                                CLASSIFICHE
+                                <span>CLASSIFICHE</span>
                             </li>
                             <li class="px-20">
-                                GENERI E MOOD
+                                <span>GENERI E MOOD</span>
                             </li>
                             <li class="px-20">
-                                NUOVE USCITE
+                                <span>NUOVE USCITE</span>
                             </li>
                             <li class="px-20">
-                                SCOPRI
+                                <span>SCOPRI</span>
                             </li>
                         </ul>
                     </nav>
@@ -129,44 +137,50 @@
                         <ul class="album-list ta-center flex">
                             <li class="album">
                                 <div class="cover">
+                                    <i class="far fa-play-circle"></i>
                                     <img src="./img/metal_lifting.jpg" alt="heavy metal">
                                 </div>
-                                <h3 class="my-20">Heavy Metal</h3>
+                                <h3 class="clickable my-20">Heavy Metal</h3>
                                 <div>Subtitle</div>
                             </li>
                             <li class="album">
                                 <div class="cover">
+                                    <i class="far fa-play-circle"></i>
                                     <img src="./img/stranger.jpeg" alt="heavy metal">
                                 </div>
-                                <h3 class="my-20">Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)</h3>
+                                <h3 class="clickable my-20">Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)</h3>
                                 <div>Kyle Dixon & Michael Stein</div>
                             </li>
                             <li class="album">
                                 <div class="cover">
+                                    <i class="far fa-play-circle"></i>
                                     <img src="./img/aquietplace.jpeg" alt="aquietplace">
                                 </div>
-                                <h3 class="my-20">A quiet place</h3>
+                                <h3 class="clickable my-20">A quiet place</h3>
                                 <div>Subtitle</div>
                             </li>
                             <li class="album">
                                 <div class="cover">
+                                    <i class="far fa-play-circle"></i>
                                     <img src="./img/split.jpeg" alt="split">
                                 </div>
-                                <h3 class="my-20">Split</h3>
+                                <h3 class="clickable my-20">Split</h3>
                                 <div>Subtitle</div>
                             </li>
                             <li class="album">
                                 <div class="cover">
+                                    <i class="far fa-play-circle"></i>
                                     <img src="./img/cure.jpeg" alt="cure">
                                 </div>
-                                <h3 class="my-20">A cure for wellness</h3>
+                                <h3 class="clickable my-20">A cure for wellness</h3>
                                 <div>Subtitle</div>
                             </li>
                             <li class="album">
                                 <div class="cover">
+                                    <i class="far fa-play-circle"></i>
                                     <img src="./img/sinister.jpeg" alt="sinister">
                                 </div>
-                                <h3 class="my-20">Sinister</h3>
+                                <h3 class="clickable my-20">Sinister</h3>
                                 <div>Subtitle</div>
                             </li>
                         </ul>
@@ -178,15 +192,17 @@
                         <ul class="album-list ta-center flex">
                             <li class="album">
                                 <div class="cover">
+                                    <i class="far fa-play-circle"></i>
                                     <img src="./img/radar.jpeg" alt="radar">
                                 </div>
-                                <h3 class="my-20">Release Radar</h3>
+                                <h3 class="clickable my-20">Release Radar</h3>
                             </li>
                             <li class="album">
                                 <div class="cover">
+                                    <i class="far fa-play-circle"></i>
                                     <img src="./img/mixdaily.jpeg" alt="mix daily">
                                 </div>
-                                <h3 class="my-20">Daily Mix 1</h3>
+                                <h3 class="clickable my-20">Daily Mix 1</h3>
                             </li>
                         </ul>
                     </section>
@@ -197,15 +213,17 @@
                         <ul class="album-list ta-center flex">
                             <li class="album">
                                 <div class="cover">
+                                    <i class="far fa-play-circle"></i>
                                     <img class="rounded" src="./img/youg.jpeg" alt="youg">
                                 </div>
-                                <h3 class="mt-20">Youg</h3>
+                                <h3 class="clickable mt-20">Youg</h3>
                             </li>
                             <li class="album">
                                 <div class="cover">
+                                    <i class="far fa-play-circle"></i>
                                     <img class="rounded" src="./img/einaudi.jpeg" alt="einaudi">
                                 </div>
-                                <h3 class="mt-20">Einaudi</h3>
+                                <h3 class="clickable mt-20">Einaudi</h3>
                             </li>
                         </ul>
                     </section>
@@ -245,7 +263,9 @@
             <div class="time flex">
                 <div class="mr-10">0:25</div>
                 <div class="bar flex">
-                    <span></span>
+                    <span>
+                        <span class="ball white"></span>
+                    </span>
                 </div>
                 <div class="ml-10">4:35</div>
             </div>
@@ -257,7 +277,9 @@
             <i class="fas fa-desktop px-10"></i>
             <i class="fas fa-volume-up px-10"></i>
             <div class="bar flex">
-                <span></span>
+                <span>
+                    <span class="ball white"></span>
+                </span>
             </div>
         </div>
     </footer>
