@@ -90,6 +90,7 @@ i:hover,
 .album .cover:hover img{
     filter: brightness(50%);
     transition: 0.3s;
+    transform: scale(1.1)
 }
 
 .album .cover:hover i{
